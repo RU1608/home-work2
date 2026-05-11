@@ -10,7 +10,6 @@ body {
     color: #fff;
 }
 
-/* Фон с кирпичной стеной и дымом */
 .box1 {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                 url('https://www.transparenttextures.com/patterns/dark-brick-wall.png'),
@@ -21,7 +20,6 @@ body {
     overflow: hidden;
 }
 
-/* Шапка */
 .box2 {
     display: flex;
     justify-content: space-between;
@@ -60,7 +58,6 @@ body {
     font-weight: bold;
 }
 
-/* Главный контент */
 .box6 {
     display: flex;
     align-items: center;
@@ -111,7 +108,6 @@ body {
     filter: drop-shadow(0 0 30px rgba(142, 68, 173, 0.4));
 }
 
-/* Белая секция внизу */
 .box9 {
     background: #fff;
     color: #333;
@@ -153,7 +149,6 @@ body {
     border-radius: 50%;
     font-weight: bold;
 }
-/* Общие стили для новых секций */
 .title-center {
     text-align: center;
     font-size: 32px;
@@ -164,7 +159,6 @@ body {
 
 .purple-text { color: #8e44ad; }
 
-/* Секция How it works */
 .box11 {
     padding: 50px 5%;
     background: #fff;
@@ -198,7 +192,7 @@ body {
 .circle-img-border {
     width: 110px;
     height: 110px;
-    border: 2px solid #f39c12; /* Оранжевая рамка */
+    border: 2px solid #f39c12; 
     border-radius: 50%;
     margin-bottom: 15px;
     padding: 5px;
@@ -222,7 +216,6 @@ body {
     font-weight: 600;
 }
 
-/* Секция What you'll get */
 .box14 {
     padding: 60px 10%;
     background: url('path-to-smoke-background.jpg') no-repeat center;
@@ -266,7 +259,6 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Оранжевая плашка внизу */
 .box18 {
     margin-top: 40px;
     background: #f39c12;
@@ -288,7 +280,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-/* Секция Why would you want it */
 .box19 {
     padding: 60px 10%;
     background: #fff;
@@ -333,7 +324,6 @@ body {
     color: #777;
 }
 
-/* Темная секция с кирпичом */
 .box22 {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
                 url('brick-wall-bg.jpg');
@@ -352,7 +342,7 @@ body {
 
 .box23 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 колонки преимуществ */
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-bottom: 80px;
 }
@@ -379,7 +369,6 @@ body {
     font-size: 13px;
 }
 
-/* Карточки отзывов */
 .box24 {
     display: flex;
     gap: 20px;
@@ -428,7 +417,6 @@ body {
     gap: 30px;
     margin-left: 300px;
 }
-/* Секция пакетов */
 .box25 {
     padding: 60px 10%;
     background: #fff;
@@ -520,7 +508,6 @@ hr {
     box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
 }
 
-/* Футер */
 .box28 {
     background: #f9f7ff;
     padding: 40px 10%;
