@@ -1,4 +1,575 @@
-*
-{
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Фон с кирпичной стеной и дымом */
+.box1 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://www.transparenttextures.com/patterns/dark-brick-wall.png'),
+                radial-gradient(circle at right, #4b2a8e 0%, #000 70%);
+    min-height: 85vh;
+    padding: 20px 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Шапка */
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.box4 {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-nav {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.1);
+}
+
+.btn-nav.active {
+    background: #8e44ad;
+    border: none;
+}
+
+.box5 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone {
+    font-weight: bold;
+}
+
+/* Главный контент */
+.box6 {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.box7 {
+    flex: 1;
+    z-index: 2;
+}
+
+.box7 h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.box7 p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.purple-text {
+    color: #bb86fc;
+    font-weight: bold;
+}
+
+.order-btn {
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+    border: none;
+    padding: 15px 35px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(230, 126, 34, 0.5);
+}
+
+.box8 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box8 img {
+    max-width: 120%;
+    filter: drop-shadow(0 0 30px rgba(142, 68, 173, 0.4));
+}
+
+/* Белая секция внизу */
+.box9 {
+    background: #fff;
+    color: #333;
+    padding: 60px 10%;
+}
+
+.box10 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step p, .step h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.step h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.num {
+    background: #8e44ad;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+/* Общие стили для новых секций */
+.title-center {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 40px 0;
+    color: #000;
+}
+
+.purple-text { color: #8e44ad; }
+
+/* Секция How it works */
+.box11 {
+    padding: 50px 5%;
+    background: #fff;
+}
+
+.box12 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.box13 {
+    flex: 1;
+    min-width: 180px;
+    max-width: 220px;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active-card {
+    border: 1px solid #8e44ad;
+}
+
+.circle-img-border {
+    width: 110px;
+    height: 110px;
+    border: 2px solid #f39c12; /* Оранжевая рамка */
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-img-border.purple-border {
+    border-color: #8e44ad;
+}
+
+.box13 p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #444;
+}
+
+.purple-text-small {
+    color: #8e44ad;
+    font-weight: 600;
+}
+
+/* Секция What you'll get */
+.box14 {
+    padding: 60px 10%;
+    background: url('path-to-smoke-background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.box15 {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.outline-title {
+    font-size: 42px;
+    border: 3px solid #f1c40f;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.box17 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-label {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Оранжевая плашка внизу */
+.box18 {
+    margin-top: 40px;
+    background: #f39c12;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.plus-icon {
+    border: 2px solid #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Секция Why would you want it */
+.box19 {
+    padding: 60px 10%;
+    background: #fff;
+    text-align: center;
+}
+
+.box20 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.box21 {
+    flex: 1;
+    padding: 20px;
+}
+
+.box21.border-accent {
+    border: 2px solid #e67e22;
+    border-radius: 5px;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box21 h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.box21 p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Темная секция с кирпичом */
+.box22 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                url('brick-wall-bg.jpg');
+    padding: 80px 10%;
+    position: relative;
+}
+
+.white-text { color: #fff; }
+
+.purple-line {
+    width: 50px;
+    height: 4px;
+    background: #8e44ad;
+    margin: -20px auto 40px;
+}
+
+.box23 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки преимуществ */
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefit-icon {
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefit-text {
+    color: #fff;
+    font-size: 13px;
+}
+
+/* Карточки отзывов */
+.box24 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+.stars {
+    color: #f39c12;
+    font-size: 14px;
+}
+
+.review-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+}
+.box300{
+    display: flex;
+    gap: 30px;
+    margin-left: 300px;
+}
+/* Секция пакетов */
+.box25 {
+    padding: 60px 10%;
+    background: #fff;
+}
+
+.box26 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.box27 {
+    flex: 1;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.box27:hover {
+    transform: translateY(-10px);
+}
+
+.package-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.package-content {
+    padding: 25px;
+}
+
+.package-content h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    font-size: 14px;
+    color: #888;
+    display: block;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.package-content p {
+    font-size: 14px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.price-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #8e44ad;
+}
+
+.extra-price {
+    font-size: 12px;
+    color: #a29bfe;
+}
+
+.order-btn-small {
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+}
+
+/* Футер */
+.box28 {
+    background: #f9f7ff;
+    padding: 40px 10%;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 80px;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-circle {
+    background: #f39c12;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.footer-phone {
+    font-weight: bold;
+    color: #333;
+}
+
+.blog-link {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right {
+    text-align: right;
+    font-size: 12px;
+    color: #777;
 }
